@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Meta Tags -->
+      <meta charset="utf-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+
+      <!-- Bootstrap CSS -->
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="fontawesome" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css      
+      ">
+      <title>Teachers</title>
+   </head>
+   <body>
+      <!--* nav -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <a class="navbar-brand" href="dash.html">sohwitt</a>
+         <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+         >
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="teachers.html"
+                     >Teachers <span class="sr-only">(current)</span></a
+                  >
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="courses.html">Courses</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="students.html">Students</a>
+               </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <div class="input-group">
+                  <input
+                     type="text"
+                     class="form-control form-control-sm"
+                     placeholder="Search"
+                     aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                     <button
+                        class="btn btn-sm btn-success"
+                        type="button"
+                        id="button-addon2"
+                     >
+                        <svg
+                           width="1em"
+                           height="1em"
+                           viewBox="0 0 16 16"
+                           class="bi bi-search"
+                           fill="currentColor"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              fill-rule="evenodd"
+                              d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                           />
+                           <path
+                              fill-rule="evenodd"
+                              d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                           />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </form>
+            <a href="#" class="btn btn-sm btn-warning ml-3">Log Out</a>
+
+         </div>
+      </nav>
+
+      <!--* nav -->
+
+      <!-- Dashboard Content -->
+
+      <div class="container-fluid">
+         <div class="row mt-3">
+            <div class="col-lg-3 col-md-3">
+               <div class="list-group ">
+                  <div class="list-group-item active">Courses Data</div>
+                  <div class="list-group-item " data-toggle="modal" data-target="#addCourse"> <a href="#" >Add Course </a><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-plus-square-fill" fill="lightblue" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                   </svg></div>
+                  
+                  <a href="#" class="list-group-item ">View all Courses</a>
+
+               </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+               <table class="table table-striped table-hover">
+                  <thead class="thead-dark">
+                     <th>ID</th>
+                     <th>Course Name</th>
+                     <th>Discription</th>
+                     <th>Details</th>
+                     <th>Edit</th>
+                     <th>Delete</th>
+                  </thead>
+                  <tr>
+                     <td>G4MAT</td>
+                     <td>Math</td>
+                     <td>Math Examples and Puzzles</td>
+                     <td><a href="#" class="btn btn-block btn-sm btn-outline-info" data-toggle="modal" data-target="#viewDetails">View</a></td>
+                     <td><a href="#" class="btn btn-block btn-sm btn-outline-warning" data-toggle="modal" data-target="#editCourse"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-pencil" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                      </svg></a></td>
+                     <td><a href="#" class=" btn btn-block btn-sm btn-outline-danger " onclick="confirm('Are you sure you want to delete this Course');">&times;</a></td>
+                  </tr>
+                  <tr>
+                     <td>G4SCI</td>
+                     <td>Science</td>
+                     <td>Inovative Science Experiments</td>
+                     <td><a href="#" class="btn btn-block btn-sm btn-outline-info" data-toggle="modal" data-target="#viewDetails">View</a></td>
+                     <td><a href="#" class="btn btn-block btn-sm btn-outline-warning" data-toggle="modal" data-target="#editCourse"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-pencil" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                      </svg></a></td>
+                     <td><a href="#" class=" btn btn-block btn-sm btn-outline-danger " onclick="confirm('Are you sure you want to delete this Course');">&times;</a></td>
+                  </tr>
+                  <tr>
+                     <td>G4HIS</td>
+                     <td>History</td>
+                     <td>Animated and Simplified World History</td>
+                     <td><a href="#" class="btn btn-block btn-sm btn-outline-info" data-toggle="modal" data-target="#viewDetails">View</a></td>
+                     <td><a href="#" class="btn btn-block btn-sm btn-outline-warning" data-toggle="modal" data-target="#editCourse"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-pencil" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                      </svg></a></td>
+                     <td><a href="#" class=" btn btn-block btn-sm btn-outline-danger " onclick="confirm('Are you sure you want to delete this Course');">&times;</a></td>
+                  </tr>
+                  <tr>
+                     <td>G4GEO</td>
+                     <td>Geography</td>
+                     <td>World and its topography</td>
+                     <td><a href="#" class="btn btn-block btn-sm btn-outline-info" data-toggle="modal" data-target="#viewDetails">View</a></td>
+                     <td><a href="#" class="btn btn-block btn-sm btn-outline-warning" data-toggle="modal" data-target="#editCourse"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-pencil" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                      </svg></a></td>
+                     <td><a href="#" class=" btn btn-block btn-sm btn-outline-danger " onclick="confirm('Are you sure you want to delete this Course');">&times;</a></td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+
+         <!-- Modals  -->
+         <!-- ?   Add teacher Modal -->
+         <div class="modal fade" id="addCourse" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered rounded">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Add Course</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Course ID" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="text"  id="" class="form-control " placeholder="Course Name" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Course Discription" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Teacher Assigned" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Teacher Email Id" required>
+                     </div>
+                     
+                     
+                  </form>       
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-success btn-block">Save</button>
+               </div>
+            </div>
+            </div>
+         </div>
+
+
+         
+         <!--? Details Modal  -->
+         <div class="modal fade" id="viewDetails" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered rounded">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Course details</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="table">
+                     <tr>
+                        <th>Course ID</th>
+                        <td>G4MAT</td>
+                     </tr>
+                     <tr>
+                        <th>Name</th>
+                        <td>Math</td>
+                     </tr>
+                     <tr>
+                        <th>Course Discription</th>
+                        <td>Math Examples and Puzzles</td>
+                     </tr>
+                     <tr>
+                        <th>Teacher name</th>
+                        <td>Kirigaya Kazuto</td>
+                     </tr>
+                     <tr>
+                        <th>Email id</th>
+                        <td>kirito@sao.com</td>
+                     </tr>
+                     <tr>
+                        <th>Students Enrolled</th>
+                        <td>12</td>
+                     </tr>
+                     
+
+                  </table>       
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+            </div>
+         </div>
+         <!-- Edit modal -->
+         <div class="modal fade" id="editCourse" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered rounded">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Edit Course</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="G4MAT" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="text"  id="" class="form-control " placeholder="Math" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Math Examples and puzzles" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Kirigaya Kazuto" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="kirito@sao.com" required>
+                     </div>
+                     
+                     
+                  </form>       
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-success btn-block">Save</button>
+               </div>
+            </div>
+            </div>
+         </div>
+         
+      </div>
+
+      <!-- Dashboard Content -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+         crossorigin="anonymous"
+      ></script>
+      <script>
+         $(function () {
+            $('[data-toggle="popover"]').popover();
+         });
+         $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+         });
+      </script>
+   </body>
+</html>

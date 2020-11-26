@@ -1,0 +1,16 @@
+body{
+   background-color: ghostwhite;
+}
+.bx{
+   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+   border: 0;
+}
+.list-group-item-coral{
+   background-color: rgb(228, 196, 196);
+   text-decoration: none;
+   color: #111111;
+}
+.dis{
+   visibility: hidden;
+   /* Check how to hide an item from css and js */
+}

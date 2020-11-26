@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Meta Tags -->
+      <meta charset="utf-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+
+      <!-- Bootstrap CSS -->
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+
+      <title>Admin Dashboard</title>
+   </head>
+   <body>
+      <!--* nav -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <a class="navbar-brand" href="dash.html">sohwitt</a>
+         <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+         >
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="teachers.html"
+                     >Teachers <span class="sr-only">(current)</span></a
+                  >
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="courses.html">Courses</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="students.html">Students</a>
+               </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <div class="input-group">
+                  <input
+                     type="text"
+                     class="form-control form-control-sm"
+                     placeholder="Search"
+                     aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                     <button
+                        class="btn btn-sm btn-success"
+                        type="button"
+                        id="button-addon2"
+                     >
+                        <svg
+                           width="1em"
+                           height="1em"
+                           viewBox="0 0 16 16"
+                           class="bi bi-search"
+                           fill="currentColor"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              fill-rule="evenodd"
+                              d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                           />
+                           <path
+                              fill-rule="evenodd"
+                              d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                           />
+                        </svg>
+                     </button>
+
+                  </div>
+
+               </div>
+            </form>
+            <a href="#" class="btn btn-sm btn-warning ml-3">Log Out</a>
+         </div>
+      </nav>
+
+      <!--* nav -->
+
+      <!-- Dashboard Content -->
+
+      <div class="container-fluid">
+         <div class="row mt-5">
+            <div class="col-lg-3 col-md-3">
+               <div class="card bx">
+                  <div class="card-body bg-dark text-white">
+                     <h4 class="card-title"> 10 <small class="text-white-50">Teachers</small></h4>
+                  </div>
+                  <div class="list-group list-group-flush">
+                     <a class="list-group-item list-group-item-action">Name 1 <span class="text-muted small ">Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 2 <span class="text-muted small ">Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 2 <span class="text-muted small ">Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 3 <span class="text-muted small ">Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 4 <span class="text-muted small ">Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 5 <span class="text-muted small ">Joining Date: xyz</span></a>
+                     <a href="teachers.html" class="list-group-item list-group-item-primary ">View all</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+               <div class="card bx">
+                  <div class="card-body bg-dark text-white">
+                     <h4 class="card-title"> 156 <small class="text-white-50">Students</small></h4>
+                  </div>
+                  <div class="list-group list-group-flush">
+                     <a class="list-group-item list-group-item-action">Name 1 <span class="text-muted small "> Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 2 <span class="text-muted small "> Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 2 <span class="text-muted small "> Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 3 <span class="text-muted small "> Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 4 <span class="text-muted small "> Joining Date: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 5 <span class="text-muted small "> Joining Date: xyz</span></a>
+                     <a href="students.html" class="list-group-item list-group-item-coral ">View all</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+               <div class="card bx">
+                  <div class="card-body bg-dark text-white">
+                     <h4 class="card-title"> 12 <small class="text-white-50">Courses</small></h4>
+                  </div>
+                  <div class="list-group">
+                     <a class="list-group-item list-group-item-action">Name 1 <span class="text-muted small "> Last Updated: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 2 <span class="text-muted small "> Last Updated: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 2 <span class="text-muted small "> Last Updated: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 3 <span class="text-muted small "> Last Updated: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 4 <span class="text-muted small "> Last Updated: xyz</span></a>
+                     <a class="list-group-item list-group-item-action">Name 5 <span class="text-muted small "> Last Updated: xyz</span></a>
+                     <a href="courses.html" class="list-group-item list-group-item-danger ">View all</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Dashboard Content -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+         crossorigin="anonymous"
+      ></script>
+      <script>
+         $(function () {
+            $('[data-toggle="popover"]').popover();
+         });
+         $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+         });
+      </script>
+   </body>
+</html>
